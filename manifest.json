@@ -18,9 +18,9 @@
       "sizes": "512x512"
     },
     {
-      "src": "favi_image.jpg",
+      "src": "fav.jpg",
       "type": "image/jpg",
-      "sizes": "192x191"
+      "sizes": "416x416"
     }
   ],
   "start_url": ".",
