@@ -1,5 +1,5 @@
 {
-  "short_name": "React App",
+  "short_name": "Text Analyzer",
   "name": "Create React App Sample",
   "icons": [
     {
@@ -16,6 +16,11 @@
       "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    {
+      "src": "favi_image.jpg",
+      "type": "image/jpg",
+      "sizes": "192x191"
     }
   ],
   "start_url": ".",
