@@ -87,10 +87,10 @@ export const TextForm = (props) => {
     let char_count = 0;
     return (
         <>
-            <div className="container">
+            <div className="container" style={{color: props.mode === 'dark' ? 'white' : '#06295c'}}>
                 <h1>{props.heading}</h1>
                 <div className="mb-3">
-                    <textarea className="form-control" id="myBox" rows="8" value={text} onChange={handleOnChange}></textarea>
+                    <textarea className="form-control" id="myBox" rows="8" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode === 'dark' ? '#06295c' : 'white', color: props.mode === 'dark' ? 'white' : '#06295c'}}></textarea>
                 </div>
                 <button className="btn btn-primary mx-2" onClick={handleUpClick}>Convert to Uppercase</button>
                 <button className="btn btn-primary mx-2" onClick={handleDownClick}>Convert to Lowercase</button>
@@ -99,12 +99,12 @@ export const TextForm = (props) => {
                 <button className="btn btn-primary mx-2" onClick={handleExtraSpaces}>Remove Extra Spaces</button>
                 <button className="btn btn-danger mx-2" onClick={handleClearClick}>Clear</button>
             </div>
-            <div className="container my-3">
+            <div className="container my-3" style={{color: props.mode === 'dark' ? 'white' : '#06295c'}}>
                 <h2>Your Text Summary</h2>
                 <p><span id = "word_count">{word_count}</span> words and <span id ="char_count">{char_count}</span> characters</p>
                 <p><span id = "read">{read}</span> Minute read</p>
                 <h3>Preview</h3>
-                <p>{text}</p>
+                <p>{text.length > 0 ? text: "Enter something above to preview it here ..."}</p>
             </div>
         </>
     )
