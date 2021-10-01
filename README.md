@@ -1,4 +1,4 @@
-# [saurav.panchal.io/text-analyzer](https://saurav.panchal.io/text-analyzer)
+# [saurav.panchal.io/text-analyzer](https://sauravpanchal.github.io/text-analyzer/)
 ### (in progress)
 
 # Getting Started with Create React App
